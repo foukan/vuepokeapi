@@ -20,7 +20,7 @@
     methods: {
       setPokemonUrl(url) {
         if(this.searchvalue !== '')
-          this.$emit('setPokemonUrl', this.apiUrl + this.searchvalue);
+          this.$emit('setPokemonUrl', this.apiUrl + this.searchvalue.toLowerCase());
       }
     }
   }
